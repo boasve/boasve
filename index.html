@@ -3,126 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promoções Dia dos Pais - Amazon</title>
+    <title>Ofertas Amazon - 11/08/2025</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
             color: #333;
         }
-        
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            background: linear-gradient(45deg, #ff6b35, #f7931e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .category {
-            margin-bottom: 30px;
-            background: rgba(255, 255, 255, 0.8);
+            background: white;
             border-radius: 15px;
-            padding: 20px;
-            border-left: 5px solid #ff6b35;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
-        
-        .category h2 {
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+        .header {
+            background: linear-gradient(45deg, #FF9500, #FF6B35);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .date {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .category {
+            margin-bottom: 50px;
+        }
+        .category-title {
+            color: #FF6B35;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #FF9500;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
-        .product-link {
-            display: block;
-            margin: 10px 0;
-            padding: 12px 20px;
-            background: linear-gradient(45deg, #ff6b35, #f7931e);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
+        .product {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #FF6B35;
             transition: all 0.3s ease;
-            font-weight: 500;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
-        
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .product-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .product-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #FF6B35, #FF9500);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
         .product-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
-            background: linear-gradient(45deg, #f7931e, #ff6b35);
-        }
-        
-        .emoji {
-            font-size: 1.2rem;
-            margin-left: 10px;
-        }
-        
-        .discount-badge {
-            background: #e74c3c;
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+            text-decoration: none;
             color: white;
-            padding: 4px 8px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-left: 10px;
         }
-        
+        .emoji {
+            font-size: 1.5em;
+        }
         .footer {
+            background: #333;
+            color: white;
             text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.05);
-            border-radius: 10px;
-            color: #666;
+            padding: 30px;
+            margin-top: 40px;
         }
-        
         @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                padding: 20px;
-            }
-            
             .header h1 {
-                font-size: 2rem;
+                font-size: 2em;
             }
-            
-            .category {
-                padding: 15px;
+            .content {
+                padding: 20px 15px;
+            }
+            .category-title {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -130,122 +116,189 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎉 DIA DOS PAIS AMAZON 🎉</h1>
+            <h1>🛒 Ofertas Especiais Amazon</h1>
+            <div class="date">📅 11 de Agosto de 2025</div>
         </div>
         
-        <div class="subtitle">
-            <strong>Associado(a) e Influencer, divulgue o Dia dos Pais na Amazon!</strong><br>
-            Ofertas com até 40% off. Confira os destaques:
-        </div>
+        <div class="content">
+            <!-- Beleza -->
+            <div class="category">
+                <h2 class="category-title">
+                    <span class="emoji">💄</span>
+                    Recomendações em Beleza
+                </h2>
+                
+                <div class="product">
+                    <div class="product-title">Matrix - Marca Profissional de Cuidados Capilares do Grupo L'Oréal</div>
+                    <a href="https://www.amazon.com.br/stores/Matrix/page/C165D37E-F5D0-41DA-A9FC-2C973BF6FB37?lp_asin=B0BZZTZMRX&linkCode=ll2&tag=vidasustent01-20&linkId=cccd9b125498f813e19cc81f3084caf3&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Ofertas Matrix 🧴
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Favoritos dos Influencers em Beleza</div>
+                    <a href="https://www.amazon.com.br/b?node=206537785011&linkCode=ll2&tag=vidasustent01-20&linkId=favoritosinf001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Favoritos 🧴
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Novidades na Amazon em Beleza</div>
+                    <a href="https://www.amazon.com.br/b?node=207658990011&linkCode=ll2&tag=vidasustent01-20&linkId=novidadesbel001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Novidades 🧴
+                    </a>
+                </div>
+            </div>
 
-        <div class="category">
-            <h2>📱 Presentes para pais tecnológicos</h2>
-            <a href="https://www.amazon.com.br/stores/page/30AE7C6B-2602-4399-9553-10CC9502C4F6?ingress=2&lp_context_asin=B0942NDQKL&visitId=dc711c85-1797-4a65-a585-823ea5351c3d&linkCode=ll2&tag=vidasustent01-20&linkId=1dc9f3899f4407e399fbbe7a7263c97c&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Neste Dia dos Pais, presenteie com seus produtos Apple favoritos <span class="emoji">📱</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=Samsung+Galaxy+Book4+Intel&linkCode=ll2&tag=vidasustent01-20&linkId=samsung-galaxy-book4&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Samsung Galaxy Book4 Intel <span class="emoji">💻</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=JBL+fone+headphone&linkCode=ll2&tag=vidasustent01-20&linkId=jbl-headphones&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                JBL, Fone de Ouvido On ear, Headphone <span class="emoji">🎧</span>
-            </a>
-        </div>
+            <!-- Eletrônicos -->
+            <div class="category">
+                <h2 class="category-title">
+                    <span class="emoji">📱</span>
+                    Ofertas em Eletrônicos
+                </h2>
+                
+                <div class="product">
+                    <div class="product-title">Extensão de Tomada com 6 tomadas</div>
+                    <a href="https://www.amazon.com.br/Extens%C3%A3o-Interfaces-Alimenta%C3%A7%C3%A3o-110-220V-Pot%C3%AAncia/dp/B0DGL3ZLJ8?th=1&linkCode=ll1&tag=vidasustent01-20&linkId=extensaotom001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 🔌
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Soundcore P20i da Anker Fone</div>
+                    <a href="https://www.amazon.com.br/soundcore-Bluetooth-Resist%C3%AAncia-Microfones-Personaliz%C3%A1vel/dp/B0BTYCRJSS?th=1&linkCode=ll1&tag=vidasustent01-20&linkId=soundcorep20i001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 🎧
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Apple 2025 iPad (Wi-Fi, 128 GB) - Azul (A16)</div>
+                    <a href="https://www.amazon.com.br/Apple-2025-iPad-Wi-Fi-128/dp/B0DZK1HM41?th=1&linkCode=ll1&tag=vidasustent01-20&linkId=apple2025ipad001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 📱
+                    </a>
+                </div>
+            </div>
 
-        <div class="category">
-            <h2>🧴 Presentes em cuidados pessoais</h2>
-            <a href="https://www.amazon.com.br/s?k=Escova+El%C3%A9trica+Philips+Colgate+SonicPro&linkCode=ll2&tag=vidasustent01-20&linkId=escova-eletrica&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Escova Elétrica Philips Colgate SonicPro, 2 unidades <span class="emoji">🪥</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=suplementos&rh=n%3A16243130011&linkCode=ll2&tag=vidasustent01-20&linkId=suplementos-ofertas&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Ofertas em Suplementos <span class="emoji">🏋🏻‍♀️</span>
-            </a>
-        </div>
+            <!-- Casa -->
+            <div class="category">
+                <h2 class="category-title">
+                    <span class="emoji">🏠</span>
+                    Ofertas em Casa
+                </h2>
+                
+                <div class="product">
+                    <div class="product-title">Até 20% off em itens de Casa</div>
+                    <a href="https://www.amazon.com.br/?linkCode=ll2&tag=vidasustent01-20&linkId=itenscasa20off001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Ofertas 🏠
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">20% off em Decoração</div>
+                    <a href="https://www.amazon.com.br/promotion/psp/AG1PN27OXH803?ref=psp_pc_cart_collapse&linkCode=ll2&tag=vidasustent01-20&linkId=decoracao20off001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Ofertas 📥🏠
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Aproveite 20% off na Semana da Piscina</div>
+                    <a href="https://www.amazon.com.br/promotion/psp/A1Q1J6NUJWIIZ2?ref=psp_pc_cart_collapse&linkCode=ll2&tag=vidasustent01-20&linkId=semanapiscina001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Ofertas 🏊🏻‍♀️
+                    </a>
+                </div>
+            </div>
 
-        <div class="category">
-            <h2>☕ Para o momento do café</h2>
-            <a href="https://www.amazon.com.br/s?k=Imeltron+caf%C3%A9&linkCode=ll2&tag=vidasustent01-20&linkId=imeltron-cafe&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Para o seu pai que ama café. Confira as promoções de Dia dos Pais da Imeltron <span class="emoji">☕</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=Kit+C%C3%A1psulas+Caf%C3%A9+Experience+Baggio&linkCode=ll2&tag=vidasustent01-20&linkId=baggio-capsulas&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Kit de Cápsulas de Café Experience Baggio, 60 cápsulas <span class="emoji">☕</span>
-            </a>
-        </div>
+            <!-- Livros -->
+            <div class="category">
+                <h2 class="category-title">
+                    <span class="emoji">📚</span>
+                    Ofertas em Livros
+                </h2>
+                
+                <div class="product">
+                    <div class="product-title">Até 45% off em Livros de HQ e Mangás</div>
+                    <a href="https://www.amazon.com.br/b/?_encoding=UTF8&node=7842710011&linkCode=ll2&tag=vidasustent01-20&linkId=livroshqmanga001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Ofertas 📚
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Até 45% off em Livros Acadêmicos e Profissionais</div>
+                    <a href="https://www.amazon.com.br/b/?_encoding=UTF8&ie=UTF8&node=12008582011&linkCode=ll2&tag=vidasustent01-20&linkId=livrosacad001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Ofertas 📚
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Livros Favoritos dos Influencers</div>
+                    <a href="https://www.amazon.com.br/b?node=206641507011&pd_rd_w=Awaqx&content-id=amzn1.sym.f2287f4b-edf9-4587-aa8c-fa9f71a98be3&pf_rd_p=f2287f4b-edf9-4587-aa8c-fa9f71a98be3&pf_rd_r=6CAC29VYC659ZH3P33TA&pd_rd_wg=xNWL3&pd_rd_r=19779d60-9690-430a-9327-1cc501143653&ref_=creatorfav-gls-creator&enabledRefinements=%5B%7B%22rid%22%3A%22p_n_deal_type%22%2C%22value%22%3A%2223565493011%22%2C%22ridType%22%3A%22SEARCH_SHORT_ID%22%2C%22type%22%3A%22BROWSE_NODE%22%7D%5D&linkCode=ll2&tag=vidasustent01-20&linkId=livrosfavinflu001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Favoritos 📚
+                    </a>
+                </div>
+            </div>
 
-        <div class="category">
-            <h2>🏠 Sugestões em Casa</h2>
-            <a href="https://www.amazon.com.br/s?k=cama+banho&rh=p_36%3A-4500&linkCode=ll2&tag=vidasustent01-20&linkId=cama-banho-45off&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Até 45% off em Ofertas para Cama e Banho <span class="discount-badge">45% OFF</span> <span class="emoji">🛏️</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=praia+churrasco&rh=p_36%3A-3000&linkCode=ll2&tag=vidasustent01-20&linkId=praia-churrasco-25off&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Até 25% off em itens de Praia e Churrasco <span class="discount-badge">25% OFF</span> <span class="emoji">⛱️🏖️</span>
-            </a>
-        </div>
+            <!-- Brinquedos -->
+            <div class="category">
+                <h2 class="category-title">
+                    <span class="emoji">🧸</span>
+                    Ofertas em Brinquedos e Jogos
+                </h2>
+                
+                <div class="product">
+                    <div class="product-title">Canetinhas Jumbo Little Creatives, Faber-Castell</div>
+                    <a href="https://www.amazon.com.br/Canetinhas-Creatives-Faber-Castell-Coloridas-Pr%C3%A9-escola/dp/B0D1GNM4NC?linkCode=ll1&tag=vidasustent01-20&linkId=canetinhasjumbo001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 🖊️
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Lousa Mágica Educativa</div>
+                    <a href="https://www.amazon.com.br/Magica-Educativa-Infantil-interativa-inclusa/dp/B0D8CQ62T2?th=1&linkCode=ll1&tag=vidasustent01-20&linkId=lousamagica001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta ✍🏻
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Squishmallows, Pelúcia Tito Tucano</div>
+                    <a href="https://www.amazon.com.br/Squishmallows-Pel%C3%BAcia-30cm-Tito-Tucano/dp/B0CGMB8ZL8?linkCode=ll1&tag=vidasustent01-20&linkId=peluciatito001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 🧸
+                    </a>
+                </div>
+            </div>
 
-        <div class="category">
-            <h2>📚 Livros em oferta</h2>
-            <a href="https://www.amazon.com.br/s?k=A+estranha+Sally+Diamond&i=digital-text&linkCode=ll2&tag=vidasustent01-20&linkId=sally-diamond&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                A estranha Sally Diamond <span class="emoji">📕</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=O+lugar+sem+limites&i=digital-text&linkCode=ll2&tag=vidasustent01-20&linkId=lugar-sem-limites&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                O lugar sem limites <span class="emoji">📕</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=A+vida+e+as+aventuras+de+Robinson+Crusoe&i=digital-text&linkCode=ll2&tag=vidasustent01-20&linkId=robinson-crusoe&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                A vida e as aventuras de Robinson Crusoé <span class="emoji">📕</span>
-            </a>
+            <!-- Moda -->
+            <div class="category">
+                <h2 class="category-title">
+                    <span class="emoji">👜</span>
+                    Recomendações em Moda
+                </h2>
+                
+                <div class="product">
+                    <div class="product-title">Mochila para Notebook</div>
+                    <a href="https://www.amazon.com.br/Mochila-para-Notebook-Masculina-Feminina/dp/B0F4NRFN8D?linkCode=ll1&tag=vidasustent01-20&linkId=mochilanot001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 🎒
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Outlet Gocase Bolsa Modelo Tote Mini</div>
+                    <a href="https://www.amazon.com.br/Outlet-Gocase-Bolsa-Modelo-Feminina/dp/B0F9FWKL9Z?th=1&linkCode=ll1&tag=vidasustent01-20&linkId=outletgocase001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 👜
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <div class="product-title">Kit 10 pares Meia Cano Médio, Básica</div>
+                    <a href="https://www.amazon.com.br/pares-B%C3%A1sica-Lupo-adulto-unissex-Branca/dp/B0CBQQQYT5?linkCode=ll1&tag=vidasustent01-20&linkId=10paresmeias001&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
+                        Ver Oferta 🧦
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="category">
-            <h2>👔 Presentes em Moda</h2>
-            <a href="https://www.amazon.com.br/s?k=Hering&rh=p_36%3A-5000&linkCode=ll2&tag=vidasustent01-20&linkId=hering-20off&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Até 20% off em Hering <span class="discount-badge">20% OFF</span> <span class="emoji">👕</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/gp/browse.html?node=17877825011&linkCode=ll2&tag=vidasustent01-20&linkId=presentes-pais-moda&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Cupom só no app em presentes para Pais <span class="emoji">🕶️</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=camiseta+time+futebol&linkCode=ll2&tag=vidasustent01-20&linkId=pai-torcedor&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Cupom só no app para o Pai Torcedor <span class="emoji">⚽</span>
-            </a>
-        </div>
-
-        <div class="category">
-            <h2>🎲 Presentes em Jogos e Diversão</h2>
-            <a href="https://www.amazon.com.br/s?k=Toyster+Quebra-Cabe%C3%A7a+Postais+do+Mundo+China&linkCode=ll2&tag=vidasustent01-20&linkId=quebra-cabeca-china&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Toyster - Quebra-Cabeça: Postais do Mundo - China <span class="emoji">🧩</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=Jogo+Enigma+do+Labirinto+Grow&linkCode=ll2&tag=vidasustent01-20&linkId=enigma-labirinto&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Jogo Enigma do Labirinto - Grow <span class="emoji">🎯</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=Gal%C3%A1pagos+Hist%C3%B3rias+Sinistras&linkCode=ll2&tag=vidasustent01-20&linkId=historias-sinistras&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Galápagos, Histórias Sinistras <span class="emoji">🃏</span>
-            </a>
-        </div>
-
-        <div class="category">
-            <h2>⭐ Mais destaques</h2>
-            <a href="https://www.amazon.com.br/s?k=Centrum&linkCode=ll2&tag=vidasustent01-20&linkId=centrum-ofertas&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                Ofertas em Centrum, compre agora <span class="emoji">💊</span>
-            </a>
-            
-            <a href="https://www.amazon.com.br/s?k=Azzaro+Ralph+Lauren+Garnier&rh=p_36%3A-10000&linkCode=ll2&tag=vidasustent01-20&linkId=perfumes-10off&language=pt_BR&ref_=as_li_ss_tl" class="product-link" target="_blank">
-                10% off em Azzaro, Ralph Lauren e Garnier <span class="discount-badge">10% OFF</span> <span class="emoji">🧴</span>
-            </a>
-        </div>
-
+        
         <div class="footer">
-            <p>🎁 <strong>Aproveite as melhores ofertas do Dia dos Pais!</strong> 🎁</p>
-            <p>✨ Todos os links redirecionam para a Amazon Brasil ✨</p>
-            <small>Como associado da Amazon, eu ganho com compras qualificadas.</small>
+            <p>🔥 Ofertas válidas por tempo limitado | Última atualização: 11/08/2025</p>
+            <p>💡 Links de afiliado Amazon - Ajude nosso canal sem pagar nada a mais!</p>
         </div>
     </div>
 </body>
